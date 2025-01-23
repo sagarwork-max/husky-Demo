@@ -8,6 +8,6 @@ namespace husky_demo.Models
 
         public int MyProperty { get; set; }
 
-        public int ID { get; set; }
+        public int ID1 { get; set; }
     }
 }
