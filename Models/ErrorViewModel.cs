@@ -7,5 +7,7 @@ namespace husky_demo.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
         public int MyProperty { get; set; }
+
+        public int ID { get; set; }
     }
 }

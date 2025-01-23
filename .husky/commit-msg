@@ -9,7 +9,7 @@ BBlue="\033[1;34m"        # Blue
 MSG_FILE=$1
 FILE_CONTENT="$(cat $MSG_FILE)"
 # Initialize constants here
-export REGEX='(Add: |Created: |Fix: |Update: |Rework: )'
+export REGEX='(feat: |fix: |style: |refactor: |test: |docs: |chore: |build: |ci: |revert: |perf: |BREAKING CHANGE: |security: |dependency: |merge: |release: |design: |cleanup: |config: |init: |experiment: )'
 export ERROR_MSG="Commit message format must match regex \"${REGEX}\""
 if [[ $FILE_CONTENT =~ $REGEX ]]; then
  printf "${BGreen}Good commit!${Color_Off}"
